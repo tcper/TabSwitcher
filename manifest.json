@@ -1,0 +1,18 @@
+{
+  "name": "Keyboard Left & Right",
+  "version": "0.1",
+  "description": "Quick select left right Tab",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["inject.js"]
+    }
+  ],
+  "manifest_version": 2
+}
